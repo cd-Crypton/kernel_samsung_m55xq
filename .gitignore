@@ -1,1 +1,6 @@
 .vscode
+kernel_platform/gki
+kernel_platform/out
+build.log
+device/
+kernel_platform/build.config
