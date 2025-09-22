@@ -1,1 +1,2 @@
-# android_kernel_samsung_m55xq
+# Kernel and Toolchain for Samsung m55xq
+This is purely from Samsung's opensource release. So don't expect to see a proper commit history on this one. It was not yet rebase to its closest release from ACK.
