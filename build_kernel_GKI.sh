@@ -26,6 +26,7 @@ cd ./kernel_platform/
 RECOMPILE_KERNEL=1 ./build/android/prepare_vendor.sh ${CHIPSET_NAME} ${TARGET_PRODUCT} gki | tee -a ../build.log
 
 #4. Use AnyKernel3
-mv ${OUT_DIR}/Image AnyKernel3
+cd ..
+mv kernel_platform/gki/gki_kernel/dist/Image AnyKernel3
 cd AnyKernel3
 zip -r9 m55xq-AnyKernel3.zip * -x .git README.md *placeholder
