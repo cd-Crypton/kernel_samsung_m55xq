@@ -1,6 +1,4 @@
-name: Recovery Builder - TWRP
-
-on:
+name: Kernel Builder
 
 jobs:
   build:
