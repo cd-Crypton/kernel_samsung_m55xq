@@ -1,5 +1,8 @@
 name: Kernel Builder
 
+on:
+  workflow_dispatch:
+
 jobs:
   build:
     name: Build TWRP by ${{ github.actor }}
