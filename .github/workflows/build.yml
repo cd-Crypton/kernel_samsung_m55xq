@@ -26,3 +26,15 @@ jobs:
     - name: Build
       run: |
         ./build_kernel_GKI.sh
+
+    - name: Upload to Release
+      uses: softprops/action-gh-release@v2
+      with:
+        files: |
+          AnyKernel3/m55xq-AnyKernel3.zip
+          kernel_platform/gki/gki_kernel/dist/Image
+        name: Unofficial Kernel Build for M55XQ (Samsung)
+        tag_name: ${{ github.run_id }}-M55XQ
+        body: |
+          Build_ID: ${{ github.run_id }}
+          Device: M55XQ (Samsung)
