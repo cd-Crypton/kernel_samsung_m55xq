@@ -32,7 +32,6 @@ jobs:
       with:
         files: |
           AnyKernel3/m55xq-AnyKernel3.zip
-          kernel_platform/gki/gki_kernel/dist/Image
         name: Unofficial Kernel Build for M55XQ (Samsung)
         tag_name: ${{ github.run_id }}-M55XQ
         body: |
